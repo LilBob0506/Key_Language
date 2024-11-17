@@ -1,5 +1,10 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }  
+
 .main {
-    background-color: #050423;
+    background-color: #02020b;
     margin-left:25%;
     padding:1px 16px;
     height:1000px;
@@ -8,7 +13,7 @@
 /* Navigation Bar Style */
 
 .navbar {
-    background-color: #080f3f;
+    background-color: #02020b;
     position: fixed;
     list-style-type: none;
     margin: 0;
@@ -16,6 +21,7 @@
     width: 25%;
     height: 100%;
     overflow: auto;
+    border: 5px solid gray;
 }
 
 .navbar a {
@@ -43,7 +49,8 @@
 /* Body Style */
 
 .header {
-    background-color: #030138;
+    background-color: #1b1b1e;
+    border: 2px solid gray;
 }
 
 
@@ -54,10 +61,13 @@
 
 .body_intro p {
     color: white;
+    text-indent: 50px;
+    font-size: 20px;
 }
 
 .body_content p {
     color: white;
+    text-indent: 50px;
 }
 
 a.button:visited
