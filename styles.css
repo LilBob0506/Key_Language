@@ -1,0 +1,71 @@
+.main {
+    background-color: #050423;
+    margin-left:25%;
+    padding:1px 16px;
+    height:1000px;
+}
+
+/* Navigation Bar Style */
+
+.navbar {
+    background-color: #080f3f;
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: 100%;
+    overflow: auto;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none; 
+    text-align: justify;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a.active {
+    color: white;
+}
+
+.navbar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+
+
+/* Body Style */
+
+.header {
+    background-color: #030138;
+}
+
+
+.header h1 {
+    color: white;
+    text-align: center;
+}
+
+.body_intro p {
+    color: white;
+}
+
+.body_content p {
+    color: white;
+}
+
+a.button:visited
+{
+ color:inherit;
+}
+.a
+{
+ color: #ADD8E6;
+ background-color: #050423;
+}
