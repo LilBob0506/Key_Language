@@ -1,27 +1,50 @@
-html, body {
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-} 
+    line-height: 1.8;
+}
 
 .main {
     background-color: #02020b;
-    margin-left:25%;
-    padding:1px 16px;
+    margin-left: 200px;
+    margin-top: 60px;
+    padding: 20px;
     height:1000px;
 }
+
+/* Header Style */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #02020b;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.header p {
+    color: white;
+    margin-left: auto;
+}
+
 
 /* Navigation Bar Style */
 
 .navbar {
-    background-color: #02020b;
     position: fixed;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    height: 100%;
-    overflow: auto;
-    border: 2px solid gray;
+    top: 60px; 
+    left: 0;
+    width: 200px;
+    height: calc(100% - 60px);
+    background-color: #02020b;
+    color: white;
+    padding: 20px 0;
 }
 
 .navbar a {
@@ -50,13 +73,13 @@ html, body {
 
 /* Body Style */
 
-.header {
+.title {
     background-color: #1b1b1e;
     border: 2px solid gray;
 }
 
 
-.header h1 {
+.title h1 {
     color: white;
     text-align: center;
 }
@@ -69,8 +92,14 @@ html, body {
 
 .body_content p {
     color: white;
-    text-indent: 50px;
 }
+
+.body_content li {
+    list-style-image: none;
+    text-indent: 50px;
+    font-size: 20px;
+}
+
 
 a.button:visited
 {
