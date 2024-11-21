@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Flow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <p> Andre Trotter &emsp; Cameron Acree &emsp; Shan Sahib &emsp; &emsp; &emsp;</p>
+    </div>
+
+    <!-- Navigation bar section -->
+    <div class="navbar">
+        <ul>
+            <li><a href="/key.html">Key</a></li>
+            <li><a href="/helloworld.html">"Hello World"</a></li>
+            <li><a href="/variables.html">Variables</a></li>
+            <li><a class="active" href="/controlflow.html">Control Flow</a></li>
+            <li><a href="/functions.html">Functions</a></li>
+            <li><a href="/classes.html">Classes</a></li>
+        </ul>
+    </div>
+  
+    <div class="maincontrolflow"> 
+        <!-- Header -->
+        <div class="title">
+            <h1>Control Flow</h1>
+        </div>
+
+         <!-- Body -->
+         <div class="body1">
+            <div class="body_content">
+                <pre class="arraydeclare">
+                    <code>
+    string fruits = [apple, orange, blueberry]
+    fruits.append("lime") // apple, orange, blueberry, lime
+    fruits[0] = "strawberries" 
+    print: "List of fruits is [fruits]" // strawberries, apple, orange blueberry,lime
+                    </code>
+                </pre>
+                <p> Arrays in Key can be declared as shown above. </p>
+
+                <pre class="emptyarray">
+                    <code>
+    double emptyArray = []
+                    </code>
+                </pre>
+                <p> Empty arrays are allowed in Key. </p>
+
+                <pre class="loopdeclare1">
+                    <code>
+    int numFruits = 0
+    for score till fruits.end() {
+        numFruits += 1
+    }
+                    </code>
+                </pre>
+                <p> Loops can be assigned 2 different ways in Key. The first is displayed above. </p>
+
+                <pre class="loopdeclare2">
+                    <code>
+    while !fruits.end() {
+        numFruits += 1
+    }
+                    </code>
+                </pre>
+                <p> And this is the second way to assign a loop. </p>
+
+                <pre class="ifelsedeclare">
+                    <code>
+    if true {
+        print : "If statment true"
+    }
+    else-if true {
+        print: "Else-if statement true"
+    }
+    else {
+        print: "Else statement true"
+    }
+                    </code>
+                </pre>
+                <p> "if else" and "else if" statements are implementations that are allowed in Key. </p>
+
+
+                <pre class="iffstatements">
+                    <code>
+    iff true and true // true
+    iff false and false // true
+    iff true and false // false
+    iff false and true // false
+    iff true or false // true
+    iff false or true // true
+    iff true or true // false
+    iff false or false // false
+                    </code>
+                </pre>
+                <p> In addition, "iff" can be used to check if to bool are same or different. </p>
+
+                <pre class="varexist">
+                    <code>
+    string fullName = "John Smith"
+    if nickName { // check if nickName exist 
+    }
+    else-if fullName.isempty() { // check if fullName exist and is empty
+    }
+    else-if fullName { // check if fullName exist
+    }
+    else {
+    }
+                    </code>
+                </pre>
+                <p> "if else" can check if variable exist at all. </p>
+
+                <pre class="isstatements">
+                    <code>
+    string occupation = teacher
+    if occupation {
+        is "firefighter" {}
+        is "policeofficer"{}
+        is "teacher" {}
+    }
+                    </code>
+                </pre>
+                <p> You can also check the same variable for multiple conditions with "is" statements. </p>
+                <p> Once 1 "is" statement is hit it breaks out of the "if" or "else-if" statement.</p>
+
+                <pre class="arrayvalue">
+                    <code>
+    int list = [10,12,15,58]
+    if list.contains(10) {}
+    else {}
+                    </code>
+                </pre>
+                <p> "if" can also check if an array contains a value. </p>
+
+                <pre class="varlooprounded">
+                    <code>
+    int randomNums = [25,56,5,89,65]
+	for int lowest till randomNums.half() {
+        if lowest > randomNums {
+            lowest = randomNums
+        }
+	} // 5 
+	for int lowest till randomNums.quarterFront() {
+	    if lowest > randomNums{
+	        lowest = randomNums
+		}
+	} // 25
+	for int lowest till randomNums.quarterBack() {
+	    if lowest > randomNums {
+	        lowest = randomNums
+		}
+	} // 65
+	for int highest till randomNums.at(3) {
+	    if highest &lt; randomNums {
+	        highest = randomNums
+		}
+	} // 89
+                    </code>
+                </pre>
+                <p> You can declare a variable in loop and run through an array halfway rounded up or a quarter front or quarter back or specific value. </p>
+
+                <pre class="loopconditions">
+                    <code>
+    for int count = 0 till ++count>=4 {}
+	while count &lt; 4 {count ++} // variable cannot be declared in while loop
+                    </code>
+                </pre>
+                <p> "while" and "for" loops can have conditions for a specific number of loops placed on them. </p>
+
+            </div>            
+        </div>
+
+    </div>
+
+</body>
+</html>

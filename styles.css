@@ -5,12 +5,52 @@
     line-height: 1.8;
 }
 
-.main {
+.mainkey {
     background-color: #02020b;
-    margin-left: 200px;
+    margin-left: 225px;
     margin-top: 60px;
     padding: 20px;
     height:1000px;
+}
+
+.mainhelloworld {
+    background-color: #02020b;
+    margin-left: 225px;
+    margin-top: 60px;
+    padding: 20px;
+    height:1000px;
+}
+
+.mainvar {
+    background-color: #02020b;
+    margin-left: 225px;
+    margin-top: 60px;
+    padding: 20px;
+    height:2200px;
+}
+
+.maincontrolflow {
+    background-color: #02020b;
+    margin-left: 225px;
+    margin-top: 60px;
+    padding: 20px;
+    height: 4600px;
+}
+
+.mainfunction {
+    background-color: #02020b;
+    margin-left: 225px;
+    margin-top: 60px;
+    padding: 20px;
+    height: 3050px;
+}
+
+.mainclasses {
+    background-color: #02020b;
+    margin-left: 225px;
+    margin-top: 60px;
+    padding: 20px;
+    height: 2255px;
 }
 
 /* Header Style */
@@ -24,8 +64,9 @@
     background-color: #02020b;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 20px 1px 20px;
     z-index: 1000;
+    border-bottom: 1px solid #555;
 }
 
 .header p {
@@ -40,11 +81,13 @@
     position: fixed;
     top: 60px; 
     left: 0;
-    width: 200px;
+    width: 225px;
     height: calc(100% - 60px);
     background-color: #02020b;
     color: white;
-    padding: 20px 0;
+    padding: 20px 1px 20px 0;
+    margin: 0;
+    border-right: 1px solid #555;
 }
 
 .navbar a {
@@ -88,10 +131,14 @@
     color: white;
     text-indent: 50px;
     font-size: 20px;
+    margin-top: 50px;
 }
 
 .body_content p {
     color: white;
+    text-indent: 50px;
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 .body_content li {
@@ -107,6 +154,358 @@ a.button:visited
 }
 .a
 {
- color: #ADD8E6;
+ color: #4169E1;
  background-color: #050423;
+}
+
+
+/* Code Style */
+
+.body1 {
+    display: flex;
+    justify-content: left; 
+    align-items: center; 
+}
+
+pre {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: auto; 
+    max-width: calc(100% - 100px); 
+    height: auto; 
+    overflow-x: auto; 
+    box-sizing: border-box;
+    
+}
+
+code {
+    font-family: Consolas, "Courier New", monospace;
+    color: white;
+}
+
+/* Individual Code Style */
+
+/* Variables */
+
+.declarebasic {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 160px;
+}
+
+.declaretokens {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 100px;
+}
+
+.declareempty {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 120px;
+}
+
+.declarevarsametype {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 325px;
+}
+
+.redeclarevar {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 160px;
+}
+
+.declareprint {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 100px;
+}
+
+/* Control Flow */
+
+.arraydeclare {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 875px; 
+    height: 200px;
+}
+
+.emptyarray {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 105px;
+}
+
+.loopdeclare1 {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 180px;
+}
+
+.loopdeclare2 {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 150px;
+}
+
+.ifelsedeclare {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 325px;
+}
+
+.iffstatements {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 300px;
+}
+
+.varexist {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 735px; 
+    height: 325px;
+}
+
+.isstatements {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 225px;
+}
+
+.arrayvalue {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 150px;
+}
+
+.varlooprounded {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 670px;
+}
+
+.loopconditions {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 800px; 
+    height: 135px;
+}
+
+/* Functions */
+
+.fundeclare1 {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 200px;
+}
+
+.fundeclare2 {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 200px;
+}
+
+.funadded {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 340px;
+}
+
+.funreturnclasses {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 1075px; 
+    height: 475px;
+}
+
+.multifuns {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 970px; 
+    height: 630px;
+}
+
+/* Classes */ 
+
+.classdeclare {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 825px; 
+    height: 250px;
+}
+
+.classesdotnotation {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 200px;
+}
+
+.classesdefiner {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 450px;
+}
+
+.structvclass {
+    background-color: #333333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-left: 50px; 
+    margin-top: 50px;
+    text-align: left;
+    width: 620px; 
+    height: 265px;
 }

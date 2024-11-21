@@ -18,15 +18,104 @@
             <li><a href="/key.html">Key</a></li>
             <li><a href="/helloworld.html">"Hello World"</a></li>
             <li><a href="/variables.html">Variables</a></li>
+            <li><a href="/controlflow.html">Control Flow</a></li>
             <li><a class="active" href="/functions.html">Functions</a></li>
             <li><a href="/classes.html">Classes</a></li>
         </ul>
     </div>
   
-    <div class="main"> 
+    <div class="mainfunction"> 
         <!-- Header -->
         <div class="title">
             <h1>Functions</h1>
+        </div>
+
+        <!-- Body -->
+        <div class="body1">
+            <div class="body_content">
+                <pre class="fundeclare1">
+                    <code>
+    fun age(string person, int number) {
+        print: "[Person] is [number] years old."
+    }
+    age("sarah" , 53)                           
+                    </code>
+                </pre>
+
+                <pre class="fundeclare2">
+                    <code>
+    string fun age(string person, int number) {
+        return ("[Person] is [number] years old.")
+    } 
+    print: "[age("sarah" , 53)]"    
+                    </code>
+                </pre>
+                <p> Functions are declared type followed by "fun" then name. Type is void if not specified. These are displayed above. </p>
+
+                <pre class="funadded">
+                    <code>
+    int fun addOne(int num) {
+        return num++
+    }
+    int fun timeTwo(int num) {
+        num*2
+    }
+
+    int number = 5
+    number = addOne(number) + timeTwo(number) // number = 12
+                    </code>
+                </pre>
+                <p> Functions can also be added together going from left to right. </p>
+
+                <pre class="funreturnclasses">
+                    <code>
+    class personalInfo {
+        string name
+        int age
+    }
+        
+    class fun printPersonal(personalInfo person, string fullName, int age) {
+        person.name = fullName
+        person.age = age
+        return person
+    }
+        
+    personInfo newPerson
+    newPerson = printPersonal(newPerson, "John Smith", 20) // newPerson.name = John Smith newPerson.age = 20
+                    </code>
+                </pre>
+                <p> Functions can also return classes. </p>
+                <p> Notice you don't have to label variables when you call a function. It automatically goes in the same order as the declaration. </p>
+                <p> Functions can call any other function that is declared in the code order doesn't matter </p>
+
+                <pre class="multifuns">
+                    <code>
+    S fun highest (int Values) {
+        int check = 0
+        for Values till Values.end{
+            if check &lt; Values  check = Values
+        }
+        print: "[check] is highest value."
+    }
+    S fun lowest (int Values) {
+        int check = 0
+        for Values till Values.end {
+            if check > Values  check = Values
+        }
+        print: "[check] is lowest value."
+    }
+    
+    int values = [10,15,60,75,600,1]
+    split S // create a split variable and all variables of this name can be done at the same time
+    S highest(values)
+    S lowest(values)
+    combine S // wait for all s variables to finish before moving on                 
+                    </code>
+                </pre>
+                <p>In Key, you can run multiple functions. If you want to run multiple functions at the same time you can use split and combine as shown above.</p>
+
+
+            </div>
         </div>
 
     </div>

@@ -18,15 +18,76 @@
             <li><a href="/key.html">Key</a></li>
             <li><a href="/helloworld.html">"Hello World"</a></li>
             <li><a href="/variables.html">Variables</a></li>
+            <li><a href="/controlflow.html">Control Flow</a></li>
             <li><a href="/functions.html">Functions</a></li>
             <li><a class="active" href="/classes.html">Classes</a></li>
         </ul>
     </div>
   
-    <div class="main"> 
+    <div class="mainclasses"> 
         <!-- Header -->
         <div class="title">
             <h1>Classes</h1>
+        </div>
+
+         <!-- Body -->
+         <div class="body1">
+            <div class="body_content">
+                <pre class="classdeclare">
+                    <code>
+    class Shape {
+        int numberOfSides = 0
+        string fun simpleDescription() { // notice class can also have funtions
+            return "A shape with [numberOfSides] sides."
+        }
+    }
+                    </code>
+                </pre>
+                <p> Class are declared very similar to functions. </p>
+
+                <pre class="classesdotnotation">
+                    <code>
+        personalInfo Sarah
+        Sarah.name = "sarah h"
+        Sarah.age = 19
+        int youngest = Sarah.age
+                    </code>
+                </pre>
+                <p> Classes can also be edited by using dot notation. </p>
+
+                <pre class="classesdefiner">
+                    <code>
+        class car {
+            string make
+            string model 
+            int year
+            
+            def (string make, string model, int year) {
+                self.make = make
+                self.model = model
+                self.year = year
+            }
+        }
+
+        car dadCar("Toyota", "Camary", 2012)     
+                    </code>
+                </pre>
+                <p> Classes can also have a definer function that can be used to set values as soon as value is called. </p>
+
+                <pre class="structvclass">
+                    <code>
+        struct Card {
+            string Rank
+            string Suit
+        }
+            
+        Card threeOfSpade= Card("three", "spades")
+                    </code>
+                </pre>
+                <p> If the user wants to have a constant class, then they can use a struct. </p>
+                <p> Unlike classes, structs don't need definers like functions. They are already declared in order. </p>
+
+            </div>
         </div>
 
     </div>

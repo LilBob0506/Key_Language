@@ -18,15 +18,76 @@
             <li><a href="/key.html">Key</a></li>
             <li><a href="/helloworld.html">"Hello World"</a></li>
             <li><a class="active" href="/variables.html">Variables</a></li>
+            <li><a href="/controlflow.html">Control Flow</a></li>
             <li><a href="/functions.html">Functions</a></li>
             <li><a href="/classes.html">Classes</a></li>
         </ul>
     </div>
   
-    <div class="main"> 
+    <div class="mainvar"> 
         <!-- Header -->
         <div class="title">
             <h1>Variables</h1>
+        </div>
+
+         <!-- Body -->
+         <div class="body1">
+            <div class="body_content">
+                <pre class="declarebasic">
+                    <code>
+    int variable = 1
+    con constant = 100
+    double variable = 10
+                    </code>
+                </pre>
+                <p> Declarations in Key are displayed above. </p>
+
+                <pre class="declaretokens">
+                    <code>
+    con string constant = "constant string"
+                    </code>
+                </pre>
+                <p> Constants can be combined with other token types. </p>
+
+                <pre class="declareempty">
+                    <code>
+    int variable // variable = 0
+    string line // line.isempty
+                    </code>
+                </pre>
+                <p> Variables declared but not initialized are set to zero or empty. </p>
+
+                <pre class="declarevarsametype">
+                    <code>
+    double variable = 10.5
+    double secondVariable = 15.1
+    combinedVariable = variable + secondVariable \\ 25.6
+
+    string label = "string"
+    string label2 = "combined"
+    ComLabel= label+label2 \\ "stringcombined"
+    ComLabelSpace = label + " " + label2 \\ "string combined"
+                    </code>
+                </pre>
+                <p> Variables of the same type can be combined with plus and combined variables can be implicit. </p>
+
+                <pre class="redeclarevar">
+                    <code>
+    int orange = 10
+    double apple = 10.5
+    double fruits = double(orange) + apple //20.5
+                    </code>
+                </pre>
+                <p> Variables can be redeclared when combined. </p>
+
+                <pre class="declareprint">
+                    <code>
+    print: "I have 'fruits' fruits." // I have 20.5 fruits
+                    </code>
+                </pre>
+                <p> Single quote prints variables. </p>
+
+            </div>            
         </div>
 
     </div>
